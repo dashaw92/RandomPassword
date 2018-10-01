@@ -12,10 +12,10 @@ except ImportError:
 
 class Password:
     def __init__(self):
-        print(datetime.date.today())
-        print("GENERATING RANDOM PASSWORD...")
+        print("Today's date: " + datetime.date.today())
+        print("⚠️ GENERATING RANDOM PASSWORD ⚠️")
         
-        for x in range(0, 2000):
+        for x in range(0, 2000000):
             randNum = random.randint(0, 9)
             randLetter = random.choice(string.ascii_letters) # string.ascii_letters contains all letters
             
